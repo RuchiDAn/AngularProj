@@ -1,0 +1,36 @@
+<!-- error this commented is your code  the semicolon should be inside the qoutes in style in a tag-->
+
+<!-- <a style="cursor: pointer";    
+[routerLink]="[index]"
+routerLinkActive="active"
+class = "list-group-item clearfix">
+<div class = "pull-left">
+    <h4 class = "list-group-item-heading">{{recipe.name}}</h4>
+    <p class = "list-group-item-text">{{recipe.description}}</p>
+</div>
+<span class = "pull-right">
+    <img 
+    [src] ="recipe.imagePath" 
+    alt="{{recipe.name}}"
+    class = "img-responsive"
+    
+    >
+    
+    
+</span>
+</a> -->
+<!--style must be there for image in img tag-->
+
+<a  class="list-group-item clearfix" style="cursor: pointer;" 
+[routerLink]="[index]"
+routerLinkActive="active"
+>
+
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{recipe.name}}</h4>
+        <p class="list-group-item-text">{{recipe.description}}</p>
+    </div>
+    <span class="pull-right">
+        <img  [src]="recipe.imagePath" alt="" class="img-responsive" style="max-height:50px; ">
+    </span>
+</a>
